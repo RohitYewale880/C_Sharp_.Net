@@ -1,0 +1,12 @@
+D:\C#\Assignment 01\Mca_Student_Admission_App\bin\Debug\Mca_Student_Admission_App.exe.config
+D:\C#\Assignment 01\Mca_Student_Admission_App\bin\Debug\Mca_Student_Admission_App.exe
+D:\C#\Assignment 01\Mca_Student_Admission_App\bin\Debug\Mca_Student_Admission_App.pdb
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.csproj.AssemblyReference.cache
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.frm_Login.resources
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.Properties.Resources.resources
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.csproj.GenerateResource.cache
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.csproj.CoreCompileInputs.cache
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.exe
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.pdb
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.frm_Add_Student_Details.resources
+D:\C#\Assignment 01\Mca_Student_Admission_App\obj\Debug\Mca_Student_Admission_App.frm_Student_List.resources

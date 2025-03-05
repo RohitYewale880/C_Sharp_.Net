@@ -1,0 +1,13 @@
+D:\C#\Assignment03\Product_Information_Details_App\bin\Debug\Product_Information_Details_App.exe.config
+D:\C#\Assignment03\Product_Information_Details_App\bin\Debug\Product_Information_Details_App.exe
+D:\C#\Assignment03\Product_Information_Details_App\bin\Debug\Product_Information_Details_App.pdb
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.csproj.AssemblyReference.cache
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.frm_Add_Product_Details.resources
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.frm_Login_Form.resources
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.frm_Product_List.resources
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.frm_Search_Product.resources
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.Properties.Resources.resources
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.csproj.GenerateResource.cache
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.csproj.CoreCompileInputs.cache
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.exe
+D:\C#\Assignment03\Product_Information_Details_App\obj\Debug\Product_Information_Details_App.pdb
