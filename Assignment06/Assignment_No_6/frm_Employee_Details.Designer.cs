@@ -29,7 +29,6 @@ namespace Assignment_No_6
         /// </summary>
         private void InitializeComponent()
         {
-            this.tb_Output = new System.Windows.Forms.TextBox();
             this.rb_Night = new System.Windows.Forms.RadioButton();
             this.rb_Evening = new System.Windows.Forms.RadioButton();
             this.gb_Shift_Time = new System.Windows.Forms.GroupBox();
@@ -54,25 +53,18 @@ namespace Assignment_No_6
             this.cb_Hindi = new System.Windows.Forms.CheckBox();
             this.cb_English = new System.Windows.Forms.CheckBox();
             this.cb_Marathi = new System.Windows.Forms.CheckBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.clb_Hobbies = new System.Windows.Forms.CheckedListBox();
             this.lbl_Error_Name = new System.Windows.Forms.Label();
             this.lbl_Error_Department = new System.Windows.Forms.Label();
             this.lbl_Error_Gender = new System.Windows.Forms.Label();
             this.lbl_Error_Shift_Time = new System.Windows.Forms.Label();
             this.lbl_Error_Language = new System.Windows.Forms.Label();
             this.lbl_Error_Hobbies = new System.Windows.Forms.Label();
+            this.lbl_Outout = new System.Windows.Forms.Label();
             this.gb_Shift_Time.SuspendLayout();
             this.gb_Gender.SuspendLayout();
             this.gb_Known_Language.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tb_Output
-            // 
-            this.tb_Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Output.Location = new System.Drawing.Point(184, 464);
-            this.tb_Output.Name = "tb_Output";
-            this.tb_Output.Size = new System.Drawing.Size(766, 29);
-            this.tb_Output.TabIndex = 20;
             // 
             // rb_Night
             // 
@@ -142,7 +134,7 @@ namespace Assignment_No_6
             this.gb_Gender.Controls.Add(this.rb_Female);
             this.gb_Gender.Controls.Add(this.rb_Male);
             this.gb_Gender.ForeColor = System.Drawing.Color.Black;
-            this.gb_Gender.Location = new System.Drawing.Point(223, 247);
+            this.gb_Gender.Location = new System.Drawing.Point(223, 234);
             this.gb_Gender.Name = "gb_Gender";
             this.gb_Gender.Size = new System.Drawing.Size(304, 54);
             this.gb_Gender.TabIndex = 18;
@@ -189,30 +181,32 @@ namespace Assignment_No_6
             // 
             this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.btn_Refresh.Location = new System.Drawing.Point(370, 405);
+            this.btn_Refresh.Location = new System.Drawing.Point(372, 414);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(130, 39);
             this.btn_Refresh.TabIndex = 21;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Submit
             // 
             this.btn_Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Submit.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.btn_Submit.Location = new System.Drawing.Point(679, 405);
+            this.btn_Submit.Location = new System.Drawing.Point(668, 414);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(130, 39);
             this.btn_Submit.TabIndex = 22;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = true;
+            this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
             // 
             // lbl_Output
             // 
             this.lbl_Output.AutoSize = true;
             this.lbl_Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Output.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_Output.Location = new System.Drawing.Point(94, 464);
+            this.lbl_Output.Location = new System.Drawing.Point(28, 463);
             this.lbl_Output.Name = "lbl_Output";
             this.lbl_Output.Size = new System.Drawing.Size(84, 29);
             this.lbl_Output.TabIndex = 10;
@@ -354,22 +348,22 @@ namespace Assignment_No_6
             this.cb_Marathi.Text = "Marathi";
             this.cb_Marathi.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
+            // clb_Hobbies
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.LightGray;
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.clb_Hobbies.BackColor = System.Drawing.Color.LightGray;
+            this.clb_Hobbies.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clb_Hobbies.FormattingEnabled = true;
+            this.clb_Hobbies.Items.AddRange(new object[] {
             "Reading",
             "Dancing",
             "Cycling",
             "Gamming",
             "Coocking",
             "Driving"});
-            this.checkedListBox1.Location = new System.Drawing.Point(679, 247);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(298, 130);
-            this.checkedListBox1.TabIndex = 26;
+            this.clb_Hobbies.Location = new System.Drawing.Point(679, 247);
+            this.clb_Hobbies.Name = "clb_Hobbies";
+            this.clb_Hobbies.Size = new System.Drawing.Size(298, 130);
+            this.clb_Hobbies.TabIndex = 26;
             // 
             // lbl_Error_Name
             // 
@@ -388,7 +382,7 @@ namespace Assignment_No_6
             this.lbl_Error_Department.AutoSize = true;
             this.lbl_Error_Department.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Error_Department.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbl_Error_Department.Location = new System.Drawing.Point(407, 203);
+            this.lbl_Error_Department.Location = new System.Drawing.Point(407, 204);
             this.lbl_Error_Department.Name = "lbl_Error_Department";
             this.lbl_Error_Department.Size = new System.Drawing.Size(120, 17);
             this.lbl_Error_Department.TabIndex = 28;
@@ -400,7 +394,7 @@ namespace Assignment_No_6
             this.lbl_Error_Gender.AutoSize = true;
             this.lbl_Error_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Error_Gender.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbl_Error_Gender.Location = new System.Drawing.Point(369, 304);
+            this.lbl_Error_Gender.Location = new System.Drawing.Point(369, 291);
             this.lbl_Error_Gender.Name = "lbl_Error_Gender";
             this.lbl_Error_Gender.Size = new System.Drawing.Size(158, 17);
             this.lbl_Error_Gender.TabIndex = 29;
@@ -412,7 +406,7 @@ namespace Assignment_No_6
             this.lbl_Error_Shift_Time.AutoSize = true;
             this.lbl_Error_Shift_Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Error_Shift_Time.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbl_Error_Shift_Time.Location = new System.Drawing.Point(389, 380);
+            this.lbl_Error_Shift_Time.Location = new System.Drawing.Point(389, 381);
             this.lbl_Error_Shift_Time.Name = "lbl_Error_Shift_Time";
             this.lbl_Error_Shift_Time.Size = new System.Drawing.Size(138, 17);
             this.lbl_Error_Shift_Time.TabIndex = 30;
@@ -443,23 +437,34 @@ namespace Assignment_No_6
             this.lbl_Error_Hobbies.Text = "Select The Hobbies";
             this.lbl_Error_Hobbies.Visible = false;
             // 
+            // lbl_Outout
+            // 
+            this.lbl_Outout.AutoSize = true;
+            this.lbl_Outout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Outout.ForeColor = System.Drawing.Color.Crimson;
+            this.lbl_Outout.Location = new System.Drawing.Point(118, 470);
+            this.lbl_Outout.Name = "lbl_Outout";
+            this.lbl_Outout.Size = new System.Drawing.Size(58, 20);
+            this.lbl_Outout.TabIndex = 33;
+            this.lbl_Outout.Text = "Output";
+            // 
             // frm_Employee_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 510);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_Outout);
             this.Controls.Add(this.lbl_Error_Hobbies);
             this.Controls.Add(this.lbl_Error_Language);
             this.Controls.Add(this.lbl_Error_Shift_Time);
             this.Controls.Add(this.lbl_Error_Gender);
             this.Controls.Add(this.lbl_Error_Department);
             this.Controls.Add(this.lbl_Error_Name);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.clb_Hobbies);
             this.Controls.Add(this.gb_Known_Language);
             this.Controls.Add(this.lbl_Hobbies);
             this.Controls.Add(this.lbl_Known_Language);
-            this.Controls.Add(this.tb_Output);
             this.Controls.Add(this.gb_Shift_Time);
             this.Controls.Add(this.gb_Gender);
             this.Controls.Add(this.cmb_Employee_Dept);
@@ -488,8 +493,6 @@ namespace Assignment_No_6
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tb_Output;
         private System.Windows.Forms.RadioButton rb_Night;
         private System.Windows.Forms.RadioButton rb_Evening;
         private System.Windows.Forms.GroupBox gb_Shift_Time;
@@ -514,13 +517,14 @@ namespace Assignment_No_6
         private System.Windows.Forms.CheckBox cb_Hindi;
         private System.Windows.Forms.CheckBox cb_English;
         private System.Windows.Forms.CheckBox cb_Marathi;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox clb_Hobbies;
         private System.Windows.Forms.Label lbl_Error_Name;
         private System.Windows.Forms.Label lbl_Error_Department;
         private System.Windows.Forms.Label lbl_Error_Gender;
         private System.Windows.Forms.Label lbl_Error_Shift_Time;
         private System.Windows.Forms.Label lbl_Error_Language;
         private System.Windows.Forms.Label lbl_Error_Hobbies;
+        private System.Windows.Forms.Label lbl_Outout;
     }
 }
 
