@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21BAFE04-A554-499E-AC8C-9AE1E16BBA92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Shree_Mobile_Shopee_App</RootNamespace>
+    <AssemblyName>Shree_Mobile_Shopee_App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_Add_New_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Customer.Designer.cs">
+      <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Mobile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Mobile.Designer.cs">
+      <DependentUpon>frm_Add_New_Mobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Customer_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Customer_Menu.Designer.cs">
+      <DependentUpon>frm_Customer_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login_Form.Designer.cs">
+      <DependentUpon>frm_Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main_Mainu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main_Mainu.Designer.cs">
+      <DependentUpon>frm_Main_Mainu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Mobile_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Mobile_List.Designer.cs">
+      <DependentUpon>frm_Mobile_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Mobile_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Mobile_Menu.Designer.cs">
+      <DependentUpon>frm_Mobile_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Search_Customer_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Search_Customer_Details.Designer.cs">
+      <DependentUpon>frm_Search_Customer_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Product.Designer.cs">
+      <DependentUpon>frm_Update_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Add_New_Customer.resx">
+      <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Mobile.resx">
+      <DependentUpon>frm_Add_New_Mobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Customer_Menu.resx">
+      <DependentUpon>frm_Customer_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login_Form.resx">
+      <DependentUpon>frm_Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main_Mainu.resx">
+      <DependentUpon>frm_Main_Mainu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Mobile_List.resx">
+      <DependentUpon>frm_Mobile_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Mobile_Menu.resx">
+      <DependentUpon>frm_Mobile_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Search_Customer_Details.resx">
+      <DependentUpon>frm_Search_Customer_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Product.resx">
+      <DependentUpon>frm_Update_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile Thambnell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MOBILE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MOBILE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MOBILE2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
