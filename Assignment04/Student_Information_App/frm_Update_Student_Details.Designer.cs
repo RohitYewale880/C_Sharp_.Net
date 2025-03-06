@@ -128,7 +128,7 @@ namespace Student_Information_App
             this.btn_Refresh.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.Red;
-            this.btn_Refresh.Location = new System.Drawing.Point(273, 450);
+            this.btn_Refresh.Location = new System.Drawing.Point(295, 450);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(137, 44);
             this.btn_Refresh.TabIndex = 7;
@@ -141,7 +141,7 @@ namespace Student_Information_App
             this.btn_Close.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Close.ForeColor = System.Drawing.Color.Red;
-            this.btn_Close.Location = new System.Drawing.Point(725, 450);
+            this.btn_Close.Location = new System.Drawing.Point(747, 450);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(108, 44);
             this.btn_Close.TabIndex = 12;
@@ -154,7 +154,7 @@ namespace Student_Information_App
             this.btn_Update.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.Color.Red;
-            this.btn_Update.Location = new System.Drawing.Point(515, 450);
+            this.btn_Update.Location = new System.Drawing.Point(534, 450);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(108, 44);
             this.btn_Update.TabIndex = 6;
