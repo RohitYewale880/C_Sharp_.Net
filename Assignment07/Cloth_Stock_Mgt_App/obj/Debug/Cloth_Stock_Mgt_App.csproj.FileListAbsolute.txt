@@ -1,0 +1,10 @@
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\bin\Debug\Cloth_Stock_Mgt_App.exe.config
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\bin\Debug\Cloth_Stock_Mgt_App.exe
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\bin\Debug\Cloth_Stock_Mgt_App.pdb
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\obj\Debug\Cloth_Stock_Mgt_App.csproj.AssemblyReference.cache
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\obj\Debug\Cloth_Stock_Mgt_App.frm_Cloth_Stock_.resources
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\obj\Debug\Cloth_Stock_Mgt_App.Properties.Resources.resources
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\obj\Debug\Cloth_Stock_Mgt_App.csproj.GenerateResource.cache
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\obj\Debug\Cloth_Stock_Mgt_App.csproj.CoreCompileInputs.cache
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\obj\Debug\Cloth_Stock_Mgt_App.exe
+D:\C#\Assignment07\Cloth_Stock_Mgt_App\obj\Debug\Cloth_Stock_Mgt_App.pdb
