@@ -30,16 +30,14 @@ namespace Cloth_Stock_Mgt_App
         private void InitializeComponent()
         {
             this.lbl_Header = new System.Windows.Forms.Label();
-            this.lbl_Cloth_Type = new System.Windows.Forms.Label();
-            this.lbl_Cloth_Name = new System.Windows.Forms.Label();
-            this.lbl_Cloth_Brand = new System.Windows.Forms.Label();
+            this.lbl_Category = new System.Windows.Forms.Label();
+            this.lbl_Sub_Category = new System.Windows.Forms.Label();
+            this.lbl_Product_Name = new System.Windows.Forms.Label();
             this.lbl_Quantity = new System.Windows.Forms.Label();
             this.lbl_Price = new System.Windows.Forms.Label();
-            this.btn_Add = new System.Windows.Forms.Button();
-            this.cmb_Cloth_Type = new System.Windows.Forms.ComboBox();
-            this.cmb_Name = new System.Windows.Forms.ComboBox();
-            this.cmb_Brand = new System.Windows.Forms.ComboBox();
-            this.tb_Quantity = new System.Windows.Forms.TextBox();
+            this.cmb_Category = new System.Windows.Forms.ComboBox();
+            this.cmb_Sub_Category = new System.Windows.Forms.ComboBox();
+            this.cmb_Product_Name = new System.Windows.Forms.ComboBox();
             this.tb_Price = new System.Windows.Forms.TextBox();
             this.lbl_Current_Stock = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -52,42 +50,42 @@ namespace Cloth_Stock_Mgt_App
             this.lbl_Header.ForeColor = System.Drawing.Color.Crimson;
             this.lbl_Header.Location = new System.Drawing.Point(208, 18);
             this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(303, 63);
+            this.lbl_Header.Size = new System.Drawing.Size(362, 63);
             this.lbl_Header.TabIndex = 0;
-            this.lbl_Header.Text = "Cloth Stock";
+            this.lbl_Header.Text = "Product Stock";
             // 
-            // lbl_Cloth_Type
+            // lbl_Category
             // 
-            this.lbl_Cloth_Type.AutoSize = true;
-            this.lbl_Cloth_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Cloth_Type.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Cloth_Type.Location = new System.Drawing.Point(57, 118);
-            this.lbl_Cloth_Type.Name = "lbl_Cloth_Type";
-            this.lbl_Cloth_Type.Size = new System.Drawing.Size(146, 31);
-            this.lbl_Cloth_Type.TabIndex = 1;
-            this.lbl_Cloth_Type.Text = "Cloth Type";
+            this.lbl_Category.AutoSize = true;
+            this.lbl_Category.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Category.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_Category.Location = new System.Drawing.Point(57, 118);
+            this.lbl_Category.Name = "lbl_Category";
+            this.lbl_Category.Size = new System.Drawing.Size(125, 31);
+            this.lbl_Category.TabIndex = 1;
+            this.lbl_Category.Text = "Category";
             // 
-            // lbl_Cloth_Name
+            // lbl_Sub_Category
             // 
-            this.lbl_Cloth_Name.AutoSize = true;
-            this.lbl_Cloth_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Cloth_Name.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Cloth_Name.Location = new System.Drawing.Point(57, 208);
-            this.lbl_Cloth_Name.Name = "lbl_Cloth_Name";
-            this.lbl_Cloth_Name.Size = new System.Drawing.Size(86, 31);
-            this.lbl_Cloth_Name.TabIndex = 1;
-            this.lbl_Cloth_Name.Text = "Name";
+            this.lbl_Sub_Category.AutoSize = true;
+            this.lbl_Sub_Category.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Sub_Category.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_Sub_Category.Location = new System.Drawing.Point(57, 208);
+            this.lbl_Sub_Category.Name = "lbl_Sub_Category";
+            this.lbl_Sub_Category.Size = new System.Drawing.Size(182, 31);
+            this.lbl_Sub_Category.TabIndex = 1;
+            this.lbl_Sub_Category.Text = "Sub-Category";
             // 
-            // lbl_Cloth_Brand
+            // lbl_Product_Name
             // 
-            this.lbl_Cloth_Brand.AutoSize = true;
-            this.lbl_Cloth_Brand.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Cloth_Brand.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Cloth_Brand.Location = new System.Drawing.Point(57, 300);
-            this.lbl_Cloth_Brand.Name = "lbl_Cloth_Brand";
-            this.lbl_Cloth_Brand.Size = new System.Drawing.Size(86, 31);
-            this.lbl_Cloth_Brand.TabIndex = 1;
-            this.lbl_Cloth_Brand.Text = "Brand";
+            this.lbl_Product_Name.AutoSize = true;
+            this.lbl_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Product_Name.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_Product_Name.Location = new System.Drawing.Point(57, 300);
+            this.lbl_Product_Name.Name = "lbl_Product_Name";
+            this.lbl_Product_Name.Size = new System.Drawing.Size(187, 31);
+            this.lbl_Product_Name.TabIndex = 1;
+            this.lbl_Product_Name.Text = "Product Name";
             // 
             // lbl_Quantity
             // 
@@ -111,58 +109,41 @@ namespace Cloth_Stock_Mgt_App
             this.lbl_Price.TabIndex = 1;
             this.lbl_Price.Text = "Price";
             // 
-            // btn_Add
+            // cmb_Category
             // 
-            this.btn_Add.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btn_Add.Location = new System.Drawing.Point(318, 457);
-            this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(105, 47);
-            this.btn_Add.TabIndex = 2;
-            this.btn_Add.Text = "Add";
-            this.btn_Add.UseVisualStyleBackColor = false;
-            // 
-            // cmb_Cloth_Type
-            // 
-            this.cmb_Cloth_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Cloth_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_Cloth_Type.FormattingEnabled = true;
-            this.cmb_Cloth_Type.Items.AddRange(new object[] {
+            this.cmb_Category.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Category.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Category.FormattingEnabled = true;
+            this.cmb_Category.Items.AddRange(new object[] {
             "a",
             "b"});
-            this.cmb_Cloth_Type.Location = new System.Drawing.Point(367, 118);
-            this.cmb_Cloth_Type.Name = "cmb_Cloth_Type";
-            this.cmb_Cloth_Type.Size = new System.Drawing.Size(320, 37);
-            this.cmb_Cloth_Type.TabIndex = 3;
+            this.cmb_Category.Location = new System.Drawing.Point(367, 118);
+            this.cmb_Category.Name = "cmb_Category";
+            this.cmb_Category.Size = new System.Drawing.Size(320, 37);
+            this.cmb_Category.TabIndex = 3;
+            this.cmb_Category.SelectedIndexChanged += new System.EventHandler(this.cmb_Category_SelectedIndexChanged);
             // 
-            // cmb_Name
+            // cmb_Sub_Category
             // 
-            this.cmb_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_Name.FormattingEnabled = true;
-            this.cmb_Name.Location = new System.Drawing.Point(367, 208);
-            this.cmb_Name.Name = "cmb_Name";
-            this.cmb_Name.Size = new System.Drawing.Size(320, 37);
-            this.cmb_Name.TabIndex = 3;
+            this.cmb_Sub_Category.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Sub_Category.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Sub_Category.FormattingEnabled = true;
+            this.cmb_Sub_Category.Location = new System.Drawing.Point(367, 208);
+            this.cmb_Sub_Category.Name = "cmb_Sub_Category";
+            this.cmb_Sub_Category.Size = new System.Drawing.Size(320, 37);
+            this.cmb_Sub_Category.TabIndex = 3;
+            this.cmb_Sub_Category.SelectedIndexChanged += new System.EventHandler(this.cmb_Sub_Category_SelectedIndexChanged);
             // 
-            // cmb_Brand
+            // cmb_Product_Name
             // 
-            this.cmb_Brand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Brand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_Brand.FormattingEnabled = true;
-            this.cmb_Brand.Location = new System.Drawing.Point(367, 300);
-            this.cmb_Brand.Name = "cmb_Brand";
-            this.cmb_Brand.Size = new System.Drawing.Size(320, 37);
-            this.cmb_Brand.TabIndex = 3;
-            // 
-            // tb_Quantity
-            // 
-            this.tb_Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Quantity.Location = new System.Drawing.Point(179, 390);
-            this.tb_Quantity.Name = "tb_Quantity";
-            this.tb_Quantity.Size = new System.Drawing.Size(168, 35);
-            this.tb_Quantity.TabIndex = 4;
+            this.cmb_Product_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Product_Name.FormattingEnabled = true;
+            this.cmb_Product_Name.Location = new System.Drawing.Point(367, 300);
+            this.cmb_Product_Name.Name = "cmb_Product_Name";
+            this.cmb_Product_Name.Size = new System.Drawing.Size(320, 37);
+            this.cmb_Product_Name.TabIndex = 3;
+            this.cmb_Product_Name.SelectedIndexChanged += new System.EventHandler(this.cmb_Product_Name_SelectedIndexChanged);
             // 
             // tb_Price
             // 
@@ -177,11 +158,11 @@ namespace Cloth_Stock_Mgt_App
             // 
             this.lbl_Current_Stock.AutoSize = true;
             this.lbl_Current_Stock.BackColor = System.Drawing.Color.Khaki;
-            this.lbl_Current_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Current_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Current_Stock.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lbl_Current_Stock.Location = new System.Drawing.Point(362, 396);
+            this.lbl_Current_Stock.Location = new System.Drawing.Point(198, 393);
             this.lbl_Current_Stock.Name = "lbl_Current_Stock";
-            this.lbl_Current_Stock.Size = new System.Drawing.Size(41, 25);
+            this.lbl_Current_Stock.Size = new System.Drawing.Size(46, 29);
             this.lbl_Current_Stock.TabIndex = 1;
             this.lbl_Current_Stock.Text = "CS";
             // 
@@ -190,19 +171,17 @@ namespace Cloth_Stock_Mgt_App
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(757, 513);
+            this.ClientSize = new System.Drawing.Size(757, 480);
             this.Controls.Add(this.tb_Price);
-            this.Controls.Add(this.tb_Quantity);
-            this.Controls.Add(this.cmb_Brand);
-            this.Controls.Add(this.cmb_Name);
-            this.Controls.Add(this.cmb_Cloth_Type);
-            this.Controls.Add(this.btn_Add);
+            this.Controls.Add(this.cmb_Product_Name);
+            this.Controls.Add(this.cmb_Sub_Category);
+            this.Controls.Add(this.cmb_Category);
             this.Controls.Add(this.lbl_Price);
             this.Controls.Add(this.lbl_Quantity);
-            this.Controls.Add(this.lbl_Cloth_Brand);
-            this.Controls.Add(this.lbl_Cloth_Name);
+            this.Controls.Add(this.lbl_Product_Name);
+            this.Controls.Add(this.lbl_Sub_Category);
             this.Controls.Add(this.lbl_Current_Stock);
-            this.Controls.Add(this.lbl_Cloth_Type);
+            this.Controls.Add(this.lbl_Category);
             this.Controls.Add(this.lbl_Header);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -218,16 +197,14 @@ namespace Cloth_Stock_Mgt_App
         #endregion
 
         private System.Windows.Forms.Label lbl_Header;
-        private System.Windows.Forms.Label lbl_Cloth_Type;
-        private System.Windows.Forms.Label lbl_Cloth_Name;
-        private System.Windows.Forms.Label lbl_Cloth_Brand;
+        private System.Windows.Forms.Label lbl_Category;
+        private System.Windows.Forms.Label lbl_Sub_Category;
+        private System.Windows.Forms.Label lbl_Product_Name;
         private System.Windows.Forms.Label lbl_Quantity;
         private System.Windows.Forms.Label lbl_Price;
-        private System.Windows.Forms.Button btn_Add;
-        private System.Windows.Forms.ComboBox cmb_Cloth_Type;
-        private System.Windows.Forms.ComboBox cmb_Name;
-        private System.Windows.Forms.ComboBox cmb_Brand;
-        private System.Windows.Forms.TextBox tb_Quantity;
+        private System.Windows.Forms.ComboBox cmb_Category;
+        private System.Windows.Forms.ComboBox cmb_Sub_Category;
+        private System.Windows.Forms.ComboBox cmb_Product_Name;
         private System.Windows.Forms.TextBox tb_Price;
         private System.Windows.Forms.Label lbl_Current_Stock;
     }
