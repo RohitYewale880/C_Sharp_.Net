@@ -181,7 +181,7 @@ namespace Assignment_No_6
             // 
             this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.btn_Refresh.Location = new System.Drawing.Point(372, 414);
+            this.btn_Refresh.Location = new System.Drawing.Point(358, 414);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(130, 39);
             this.btn_Refresh.TabIndex = 21;
@@ -193,7 +193,7 @@ namespace Assignment_No_6
             // 
             this.btn_Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Submit.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.btn_Submit.Location = new System.Drawing.Point(668, 414);
+            this.btn_Submit.Location = new System.Drawing.Point(664, 414);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(130, 39);
             this.btn_Submit.TabIndex = 22;
@@ -217,7 +217,7 @@ namespace Assignment_No_6
             this.lbl_Shift_Time.AutoSize = true;
             this.lbl_Shift_Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Shift_Time.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_Shift_Time.Location = new System.Drawing.Point(12, 324);
+            this.lbl_Shift_Time.Location = new System.Drawing.Point(10, 324);
             this.lbl_Shift_Time.Name = "lbl_Shift_Time";
             this.lbl_Shift_Time.Size = new System.Drawing.Size(100, 25);
             this.lbl_Shift_Time.TabIndex = 11;
@@ -228,7 +228,7 @@ namespace Assignment_No_6
             this.lbl_Gender.AutoSize = true;
             this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Gender.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_Gender.Location = new System.Drawing.Point(12, 247);
+            this.lbl_Gender.Location = new System.Drawing.Point(10, 247);
             this.lbl_Gender.Name = "lbl_Gender";
             this.lbl_Gender.Size = new System.Drawing.Size(77, 25);
             this.lbl_Gender.TabIndex = 12;
@@ -239,7 +239,7 @@ namespace Assignment_No_6
             this.lbl_Employee_Department.AutoSize = true;
             this.lbl_Employee_Department.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Employee_Department.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_Employee_Department.Location = new System.Drawing.Point(12, 172);
+            this.lbl_Employee_Department.Location = new System.Drawing.Point(10, 172);
             this.lbl_Employee_Department.Name = "lbl_Employee_Department";
             this.lbl_Employee_Department.Size = new System.Drawing.Size(205, 25);
             this.lbl_Employee_Department.TabIndex = 13;
@@ -250,7 +250,7 @@ namespace Assignment_No_6
             this.lbl_Employee_Name.AutoSize = true;
             this.lbl_Employee_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Employee_Name.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_Employee_Name.Location = new System.Drawing.Point(12, 99);
+            this.lbl_Employee_Name.Location = new System.Drawing.Point(10, 99);
             this.lbl_Employee_Name.Name = "lbl_Employee_Name";
             this.lbl_Employee_Name.Size = new System.Drawing.Size(156, 25);
             this.lbl_Employee_Name.TabIndex = 14;
@@ -273,7 +273,7 @@ namespace Assignment_No_6
             this.lbl_Known_Language.AutoSize = true;
             this.lbl_Known_Language.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Known_Language.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_Known_Language.Location = new System.Drawing.Point(576, 98);
+            this.lbl_Known_Language.Location = new System.Drawing.Point(572, 98);
             this.lbl_Known_Language.Name = "lbl_Known_Language";
             this.lbl_Known_Language.Size = new System.Drawing.Size(176, 25);
             this.lbl_Known_Language.TabIndex = 23;
@@ -284,7 +284,7 @@ namespace Assignment_No_6
             this.lbl_Hobbies.AutoSize = true;
             this.lbl_Hobbies.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Hobbies.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_Hobbies.Location = new System.Drawing.Point(576, 247);
+            this.lbl_Hobbies.Location = new System.Drawing.Point(572, 247);
             this.lbl_Hobbies.Name = "lbl_Hobbies";
             this.lbl_Hobbies.Size = new System.Drawing.Size(84, 25);
             this.lbl_Hobbies.TabIndex = 24;
