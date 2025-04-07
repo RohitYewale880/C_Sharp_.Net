@@ -129,6 +129,7 @@ namespace Shree_Mobile_Shopee_App
             this.Name = "frm_Mobile_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mobile Menu";
+            this.Load += new System.EventHandler(this.frm_Mobile_Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

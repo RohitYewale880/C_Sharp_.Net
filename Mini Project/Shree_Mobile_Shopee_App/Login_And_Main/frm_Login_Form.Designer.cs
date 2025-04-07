@@ -79,6 +79,7 @@ namespace Shree_Mobile_Shopee_App
             // btn_Login
             // 
             this.btn_Login.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btn_Login.Enabled = false;
             this.btn_Login.Font = new System.Drawing.Font("Georgia", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.ForeColor = System.Drawing.Color.Navy;
             this.btn_Login.Location = new System.Drawing.Point(187, 289);
@@ -91,12 +92,15 @@ namespace Shree_Mobile_Shopee_App
             // 
             // tb_Password
             // 
+            this.tb_Password.Enabled = false;
             this.tb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Password.Location = new System.Drawing.Point(261, 189);
             this.tb_Password.MaxLength = 6;
             this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '•';
             this.tb_Password.Size = new System.Drawing.Size(262, 35);
             this.tb_Password.TabIndex = 2;
+            this.tb_Password.TextChanged += new System.EventHandler(this.Text_Change);
             // 
             // tb_Username
             // 
@@ -107,6 +111,7 @@ namespace Shree_Mobile_Shopee_App
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(262, 35);
             this.tb_Username.TabIndex = 1;
+            this.tb_Username.TextChanged += new System.EventHandler(this.Text_Changed);
             // 
             // lbl_Password
             // 

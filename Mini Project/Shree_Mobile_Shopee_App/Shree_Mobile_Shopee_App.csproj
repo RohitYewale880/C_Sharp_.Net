@@ -46,87 +46,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_Add_New_Customer.cs">
+    <Compile Include="Customer_Master\frm_Add_New_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Add_New_Customer.Designer.cs">
+    <Compile Include="Customer_Master\frm_Add_New_Customer.Designer.cs">
       <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Add_New_Mobile.cs">
+    <Compile Include="Mobile_Master\frm_Add_New_Mobile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Add_New_Mobile.Designer.cs">
+    <Compile Include="Mobile_Master\frm_Add_New_Mobile.Designer.cs">
       <DependentUpon>frm_Add_New_Mobile.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Customer_Menu.cs">
+    <Compile Include="Customer_Master\frm_Customer_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Customer_Menu.Designer.cs">
+    <Compile Include="Customer_Master\frm_Customer_Menu.Designer.cs">
       <DependentUpon>frm_Customer_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Login_Form.cs">
+    <Compile Include="Login_And_Main\frm_Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Login_Form.Designer.cs">
+    <Compile Include="Login_And_Main\frm_Login_Form.Designer.cs">
       <DependentUpon>frm_Login_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Main_Mainu.cs">
+    <Compile Include="Login_And_Main\frm_Main_Mainu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Main_Mainu.Designer.cs">
+    <Compile Include="Login_And_Main\frm_Main_Mainu.Designer.cs">
       <DependentUpon>frm_Main_Mainu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Mobile_List.cs">
+    <Compile Include="Mobile_Master\frm_Mobile_List.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Mobile_List.Designer.cs">
+    <Compile Include="Mobile_Master\frm_Mobile_List.Designer.cs">
       <DependentUpon>frm_Mobile_List.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Mobile_Menu.cs">
+    <Compile Include="Mobile_Master\frm_Mobile_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Mobile_Menu.Designer.cs">
+    <Compile Include="Mobile_Master\frm_Mobile_Menu.Designer.cs">
       <DependentUpon>frm_Mobile_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Search_Customer_Details.cs">
+    <Compile Include="Customer_Master\frm_Search_Customer_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Search_Customer_Details.Designer.cs">
+    <Compile Include="Customer_Master\frm_Search_Customer_Details.Designer.cs">
       <DependentUpon>frm_Search_Customer_Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Update_Product.cs">
+    <Compile Include="Mobile_Master\frm_Update_Product.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Update_Product.Designer.cs">
+    <Compile Include="Mobile_Master\frm_Update_Product.Designer.cs">
       <DependentUpon>frm_Update_Product.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_Add_New_Customer.resx">
+    <EmbeddedResource Include="Customer_Master\frm_Add_New_Customer.resx">
       <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Add_New_Mobile.resx">
+    <EmbeddedResource Include="Mobile_Master\frm_Add_New_Mobile.resx">
       <DependentUpon>frm_Add_New_Mobile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Customer_Menu.resx">
+    <EmbeddedResource Include="Customer_Master\frm_Customer_Menu.resx">
       <DependentUpon>frm_Customer_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Login_Form.resx">
+    <EmbeddedResource Include="Login_And_Main\frm_Login_Form.resx">
       <DependentUpon>frm_Login_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Main_Mainu.resx">
+    <EmbeddedResource Include="Login_And_Main\frm_Main_Mainu.resx">
       <DependentUpon>frm_Main_Mainu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Mobile_List.resx">
+    <EmbeddedResource Include="Mobile_Master\frm_Mobile_List.resx">
       <DependentUpon>frm_Mobile_List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Mobile_Menu.resx">
+    <EmbeddedResource Include="Mobile_Master\frm_Mobile_Menu.resx">
       <DependentUpon>frm_Mobile_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Search_Customer_Details.resx">
+    <EmbeddedResource Include="Customer_Master\frm_Search_Customer_Details.resx">
       <DependentUpon>frm_Search_Customer_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Update_Product.resx">
+    <EmbeddedResource Include="Mobile_Master\frm_Update_Product.resx">
       <DependentUpon>frm_Update_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

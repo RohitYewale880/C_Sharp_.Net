@@ -26,9 +26,14 @@ namespace Shree_Mobile_Shopee_App
 
         private void btn_Log_Out_Click(object sender, EventArgs e)
         {
-            frm_Login_Form obj = new frm_Login_Form();
-            obj.Show();
-            this.Hide();
+            DialogResult Res = MessageBox.Show("You Want To LogOut??", "LOGGING OUT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (Res == DialogResult.Yes)
+            {
+                frm_Login_Form Obj = new frm_Login_Form();
+                Obj.Show();
+                this.Hide();
+            }
         }
 
         private void btn_Add_New_Mobile_Click(object sender, EventArgs e)
@@ -50,6 +55,11 @@ namespace Shree_Mobile_Shopee_App
             frm_Mobile_List obj = new frm_Mobile_List();
             obj.Show();
             this.Hide();
+        }
+
+        private void frm_Mobile_Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

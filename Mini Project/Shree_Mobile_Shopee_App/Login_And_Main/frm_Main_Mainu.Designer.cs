@@ -136,6 +136,7 @@ namespace Shree_Mobile_Shopee_App
             this.Name = "frm_Main_Mainu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Mainu";
+            this.Load += new System.EventHandler(this.frm_Main_Mainu_Load);
             this.pnl_Header.ResumeLayout(false);
             this.pnl_Header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Customer)).EndInit();
