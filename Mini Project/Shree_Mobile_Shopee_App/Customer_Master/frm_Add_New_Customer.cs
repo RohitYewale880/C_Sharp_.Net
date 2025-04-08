@@ -18,6 +18,8 @@ namespace Shree_Mobile_Shopee_App
             InitializeComponent();
         }
 
+        int PCnt = 1;
+
         SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-JQI0KIJ;Initial Catalog=Shree_Mobile_App_DB;Integrated Security=True;Pooling=False");
 
         void Con_Start()
@@ -44,9 +46,9 @@ namespace Shree_Mobile_Shopee_App
             tb_Mobile_No.Clear();
             cmb_Brand_Name.SelectedIndex = -1;
             cmb_Mobiles.SelectedIndex = -1;
-            tb_Price.Clear();
-            tb_Total_Price.Clear();
+            tb_Sale_Price.Clear();
             tb_Total.Clear();
+            tb_Total_Bill.Clear();
 
 
             tb_Customer_ID.Focus();
@@ -75,6 +77,48 @@ namespace Shree_Mobile_Shopee_App
             Con_Stop();
         }
 
+        private void Text_Changed(object sender, EventArgs e)
+        {
+            Con_Start();
+
+            SqlCommand Cmd = new SqlCommand();
+            Cmd.Connection = Con;
+            Cmd.CommandText = "Select Distinct(Mobile_Name) From Product_Details where Mobile_Brand = '" + cmb_Brand_Name.Text + "'";
+
+            SqlDataReader Dr = Cmd.ExecuteReader();
+
+            cmb_Mobiles.Items.Clear();
+
+            while (Dr.Read())
+            {
+                cmb_Mobiles.Items.Add(Dr["Mobile_Name"].ToString());
+            }
+
+            Con_Stop();
+            cmb_Mobiles.Enabled = true;
+        }
+
+        private void cmb_Mobiles_TextChanged(object sender, EventArgs e)
+        {
+            Con_Start();
+
+            SqlCommand Cmd = new SqlCommand();
+            Cmd.Connection = Con;
+            Cmd.CommandText = "Select Distinct(Sale_Rate) From Product_Details where Mobile_Brand = '" + cmb_Brand_Name.Text + "' And Mobile_Name =  '" + cmb_Mobiles.Text + "'";
+
+            SqlDataReader Dr = Cmd.ExecuteReader();
+
+            tb_Sale_Price.Clear();
+
+            while (Dr.Read())
+            {
+                tb_Sale_Price.Text = (Dr["Sale_Rate"].ToString());
+            }
+
+            Con_Stop();
+            tb_Quantity.Enabled = true;
+        }
+
         int Auto_Incr()
         {
             Con_Start();
@@ -98,7 +142,7 @@ namespace Shree_Mobile_Shopee_App
             }
             else
             {
-                Cnt = 0;
+                Cnt = 100;
             }
 
             tb_Customer_ID.Text = Convert.ToString(Cnt);
@@ -106,6 +150,19 @@ namespace Shree_Mobile_Shopee_App
             Con_Stop();
 
             return Cnt + 1;
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            if (tb_Total.Text != "")
+            {
+                dgv_List_Of_Perchase_Mobile.Rows.Add(PCnt, cmb_Brand_Name.Text, cmb_Mobiles.Text, tb_Sale_Price.Text, tb_Quantity.Text, tb_Quantity.Text, tb_Total.Text);
+                PCnt++;
+            }
+
+            double
+
+            double Total_Bill = Convert.ToDouble(tb_Total_Bill.Text) + Convert.ToDouble(tb_Total.Text);
         }
 
         private void btn_Log_Out_Click(object sender, EventArgs e)
