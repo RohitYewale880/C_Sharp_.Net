@@ -30,5 +30,10 @@ namespace Shree_Mobile_Shopee_App
             obj.Show();
             this.Hide();
         }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

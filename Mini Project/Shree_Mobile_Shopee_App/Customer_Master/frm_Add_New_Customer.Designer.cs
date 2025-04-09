@@ -48,23 +48,23 @@ namespace Shree_Mobile_Shopee_App
             this.tb_Total_Bill = new System.Windows.Forms.TextBox();
             this.lbl_Total_Bill = new System.Windows.Forms.Label();
             this.dgv_List_Of_Perchase_Mobile = new System.Windows.Forms.DataGridView();
-            this.btn_Add = new System.Windows.Forms.Button();
-            this.cmb_Brand_Name = new System.Windows.Forms.ComboBox();
-            this.cmb_Mobiles = new System.Windows.Forms.ComboBox();
-            this.tb_Sale_Price = new System.Windows.Forms.TextBox();
-            this.lbl_Price = new System.Windows.Forms.Label();
-            this.lbl_Brand = new System.Windows.Forms.Label();
-            this.lbl_Mobile = new System.Windows.Forms.Label();
-            this.lbl_Quantity = new System.Windows.Forms.Label();
-            this.lbl_Total_Price = new System.Windows.Forms.Label();
-            this.tb_Quantity = new System.Windows.Forms.TextBox();
-            this.tb_Total = new System.Windows.Forms.TextBox();
             this.Sr_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Brand_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Add = new System.Windows.Forms.Button();
+            this.cmb_Brand_Name = new System.Windows.Forms.ComboBox();
+            this.cmb_Mobiles = new System.Windows.Forms.ComboBox();
+            this.tb_Total = new System.Windows.Forms.TextBox();
+            this.tb_Quantity = new System.Windows.Forms.TextBox();
+            this.tb_Sale_Price = new System.Windows.Forms.TextBox();
+            this.lbl_Total_Price = new System.Windows.Forms.Label();
+            this.lbl_Quantity = new System.Windows.Forms.Label();
+            this.lbl_Price = new System.Windows.Forms.Label();
+            this.lbl_Brand = new System.Windows.Forms.Label();
+            this.lbl_Mobile = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.gb_Customer_Details.SuspendLayout();
             this.gb_Puechase_Details.SuspendLayout();
@@ -301,6 +301,38 @@ namespace Shree_Mobile_Shopee_App
             this.dgv_List_Of_Perchase_Mobile.Size = new System.Drawing.Size(955, 172);
             this.dgv_List_Of_Perchase_Mobile.TabIndex = 11;
             // 
+            // Sr_No
+            // 
+            this.Sr_No.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Sr_No.HeaderText = "Sr No";
+            this.Sr_No.Name = "Sr_No";
+            this.Sr_No.Width = 59;
+            // 
+            // Brand_Name
+            // 
+            this.Brand_Name.HeaderText = "Brand Name";
+            this.Brand_Name.Name = "Brand_Name";
+            // 
+            // Mobile
+            // 
+            this.Mobile.HeaderText = "Mobile";
+            this.Mobile.Name = "Mobile";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            // 
+            // Total_Price
+            // 
+            this.Total_Price.HeaderText = "Total Price";
+            this.Total_Price.Name = "Total_Price";
+            // 
             // btn_Add
             // 
             this.btn_Add.BackColor = System.Drawing.Color.BlanchedAlmond;
@@ -316,6 +348,7 @@ namespace Shree_Mobile_Shopee_App
             // 
             // cmb_Brand_Name
             // 
+            this.cmb_Brand_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Brand_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Brand_Name.FormattingEnabled = true;
             this.cmb_Brand_Name.ItemHeight = 25;
@@ -327,6 +360,7 @@ namespace Shree_Mobile_Shopee_App
             // 
             // cmb_Mobiles
             // 
+            this.cmb_Mobiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Mobiles.Enabled = false;
             this.cmb_Mobiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Mobiles.FormattingEnabled = true;
@@ -337,6 +371,26 @@ namespace Shree_Mobile_Shopee_App
             this.cmb_Mobiles.TabIndex = 6;
             this.cmb_Mobiles.TextChanged += new System.EventHandler(this.cmb_Mobiles_TextChanged);
             // 
+            // tb_Total
+            // 
+            this.tb_Total.Enabled = false;
+            this.tb_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Total.Location = new System.Drawing.Point(631, 62);
+            this.tb_Total.Name = "tb_Total";
+            this.tb_Total.Size = new System.Drawing.Size(146, 30);
+            this.tb_Total.TabIndex = 8;
+            this.tb_Total.Text = "0";
+            // 
+            // tb_Quantity
+            // 
+            this.tb_Quantity.Enabled = false;
+            this.tb_Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Quantity.Location = new System.Drawing.Point(526, 62);
+            this.tb_Quantity.Name = "tb_Quantity";
+            this.tb_Quantity.Size = new System.Drawing.Size(99, 30);
+            this.tb_Quantity.TabIndex = 8;
+            this.tb_Quantity.TextChanged += new System.EventHandler(this.tb_Quantity_TextChanged);
+            // 
             // tb_Sale_Price
             // 
             this.tb_Sale_Price.Enabled = false;
@@ -345,6 +399,28 @@ namespace Shree_Mobile_Shopee_App
             this.tb_Sale_Price.Name = "tb_Sale_Price";
             this.tb_Sale_Price.Size = new System.Drawing.Size(146, 30);
             this.tb_Sale_Price.TabIndex = 8;
+            // 
+            // lbl_Total_Price
+            // 
+            this.lbl_Total_Price.AutoSize = true;
+            this.lbl_Total_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Total_Price.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbl_Total_Price.Location = new System.Drawing.Point(640, 30);
+            this.lbl_Total_Price.Name = "lbl_Total_Price";
+            this.lbl_Total_Price.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Total_Price.TabIndex = 2;
+            this.lbl_Total_Price.Text = "Total Price";
+            // 
+            // lbl_Quantity
+            // 
+            this.lbl_Quantity.AutoSize = true;
+            this.lbl_Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Quantity.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbl_Quantity.Location = new System.Drawing.Point(525, 30);
+            this.lbl_Quantity.Name = "lbl_Quantity";
+            this.lbl_Quantity.Size = new System.Drawing.Size(100, 29);
+            this.lbl_Quantity.TabIndex = 2;
+            this.lbl_Quantity.Text = "Quantity";
             // 
             // lbl_Price
             // 
@@ -378,79 +454,6 @@ namespace Shree_Mobile_Shopee_App
             this.lbl_Mobile.Size = new System.Drawing.Size(87, 29);
             this.lbl_Mobile.TabIndex = 2;
             this.lbl_Mobile.Text = "Mobile";
-            // 
-            // lbl_Quantity
-            // 
-            this.lbl_Quantity.AutoSize = true;
-            this.lbl_Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Quantity.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbl_Quantity.Location = new System.Drawing.Point(525, 30);
-            this.lbl_Quantity.Name = "lbl_Quantity";
-            this.lbl_Quantity.Size = new System.Drawing.Size(100, 29);
-            this.lbl_Quantity.TabIndex = 2;
-            this.lbl_Quantity.Text = "Quantity";
-            // 
-            // lbl_Total_Price
-            // 
-            this.lbl_Total_Price.AutoSize = true;
-            this.lbl_Total_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Total_Price.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbl_Total_Price.Location = new System.Drawing.Point(640, 30);
-            this.lbl_Total_Price.Name = "lbl_Total_Price";
-            this.lbl_Total_Price.Size = new System.Drawing.Size(130, 29);
-            this.lbl_Total_Price.TabIndex = 2;
-            this.lbl_Total_Price.Text = "Total Price";
-            // 
-            // tb_Quantity
-            // 
-            this.tb_Quantity.Enabled = false;
-            this.tb_Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Quantity.Location = new System.Drawing.Point(526, 62);
-            this.tb_Quantity.Name = "tb_Quantity";
-            this.tb_Quantity.Size = new System.Drawing.Size(99, 30);
-            this.tb_Quantity.TabIndex = 8;
-            // 
-            // tb_Total
-            // 
-            this.tb_Total.Enabled = false;
-            this.tb_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Total.Location = new System.Drawing.Point(631, 62);
-            this.tb_Total.Name = "tb_Total";
-            this.tb_Total.Size = new System.Drawing.Size(146, 30);
-            this.tb_Total.TabIndex = 8;
-            this.tb_Total.Text = "0";
-            // 
-            // Sr_No
-            // 
-            this.Sr_No.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Sr_No.HeaderText = "Sr No";
-            this.Sr_No.Name = "Sr_No";
-            this.Sr_No.Width = 59;
-            // 
-            // Brand_Name
-            // 
-            this.Brand_Name.HeaderText = "Brand Name";
-            this.Brand_Name.Name = "Brand_Name";
-            // 
-            // Mobile
-            // 
-            this.Mobile.HeaderText = "Mobile";
-            this.Mobile.Name = "Mobile";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            // 
-            // Total_Price
-            // 
-            this.Total_Price.HeaderText = "Total Price";
-            this.Total_Price.Name = "Total_Price";
             // 
             // frm_Add_New_Customer
             // 

@@ -119,6 +119,15 @@ namespace Shree_Mobile_Shopee_App
             tb_Quantity.Enabled = true;
         }
 
+        private void tb_Quantity_TextChanged(object sender, EventArgs e)
+        {
+            if(tb_Sale_Price.Text != "" && tb_Quantity.Text != "")
+            {
+                double Total = Convert.ToDouble(tb_Sale_Price.Text) * Convert.ToDouble(tb_Quantity.Text);
+                tb_Total.Text = Convert.ToString(Total);
+            }         
+        }
+
         int Auto_Incr()
         {
             Con_Start();
@@ -154,25 +163,43 @@ namespace Shree_Mobile_Shopee_App
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            if (tb_Total.Text != "")
+            if (cmb_Brand_Name.Text != "" && cmb_Mobiles.Text != "" && tb_Sale_Price.Text != "" &&tb_Quantity.Text != "" && tb_Total.Text != "")
             {
-                dgv_List_Of_Perchase_Mobile.Rows.Add(PCnt, cmb_Brand_Name.Text, cmb_Mobiles.Text, tb_Sale_Price.Text, tb_Quantity.Text, tb_Quantity.Text, tb_Total.Text);
-                PCnt++;
+                bool Flag = true;
+                for (int i = 0; i < dgv_List_Of_Perchase_Mobile.RowCount; i++)
+                {
+                    if(cmb_Mobiles.Text == Convert.ToString(dgv_List_Of_Perchase_Mobile.Rows[i].Cells[2].Value))
+                    {
+                        int NewQut = Convert.ToInt32(dgv_List_Of_Perchase_Mobile.Rows[i].Cells[4].Value) + Convert.ToInt32(tb_Quantity.Text);
+                        dgv_List_Of_Perchase_Mobile.Rows[i].Cells[4].Value = NewQut;
+
+                        double Amt = Convert.ToDouble(dgv_List_Of_Perchase_Mobile.Rows[i].Cells[5].Value) + Convert.ToDouble(tb_Total.Text);
+                        dgv_List_Of_Perchase_Mobile.Rows[i].Cells[5].Value = Amt;
+
+                        Flag = false;
+                        break;
+                    }               
+                }
+
+                if(Flag == true)
+                {
+                    dgv_List_Of_Perchase_Mobile.Rows.Add(PCnt, cmb_Brand_Name.Text, cmb_Mobiles.Text, tb_Sale_Price.Text, tb_Quantity.Text, tb_Total.Text);
+                }
+
+                double Bill = Convert.ToDouble(tb_Total_Bill.Text) + Convert.ToDouble(tb_Total.Text);
+                tb_Total_Bill.Text = Convert.ToString(Bill);
             }
 
-            double
+            cmb_Brand_Name.SelectedIndex = -1;
+            cmb_Mobiles.SelectedIndex = -1;
+            tb_Sale_Price.Clear();
+            tb_Quantity.Clear();
+            tb_Total.Clear();
 
-            double Total_Bill = Convert.ToDouble(tb_Total_Bill.Text) + Convert.ToDouble(tb_Total.Text);
+            PCnt++;
         }
 
         private void btn_Log_Out_Click(object sender, EventArgs e)
-        {
-            frm_Login_Form obj = new frm_Login_Form();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void btn_Back_Click(object sender, EventArgs e)
         {
             DialogResult Res = MessageBox.Show("You Want To LogOut??", "LOGGING OUT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -182,6 +209,13 @@ namespace Shree_Mobile_Shopee_App
                 Obj.Show();
                 this.Hide();
             }
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            frm_Customer_Menu obj = new frm_Customer_Menu();
+            obj.Show();
+            this.Hide();
         }
     }
 }
