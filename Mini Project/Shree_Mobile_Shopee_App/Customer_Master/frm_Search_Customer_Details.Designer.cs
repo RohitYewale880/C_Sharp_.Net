@@ -223,7 +223,7 @@ namespace Shree_Mobile_Shopee_App
             this.lbl_Total_Bill.AutoSize = true;
             this.lbl_Total_Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Total_Bill.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbl_Total_Bill.Location = new System.Drawing.Point(494, 298);
+            this.lbl_Total_Bill.Location = new System.Drawing.Point(486, 298);
             this.lbl_Total_Bill.Name = "lbl_Total_Bill";
             this.lbl_Total_Bill.Size = new System.Drawing.Size(130, 36);
             this.lbl_Total_Bill.TabIndex = 12;
@@ -232,7 +232,7 @@ namespace Shree_Mobile_Shopee_App
             // tb_Total
             // 
             this.tb_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Total.Location = new System.Drawing.Point(696, 299);
+            this.tb_Total.Location = new System.Drawing.Point(685, 299);
             this.tb_Total.Name = "tb_Total";
             this.tb_Total.Size = new System.Drawing.Size(184, 35);
             this.tb_Total.TabIndex = 13;
