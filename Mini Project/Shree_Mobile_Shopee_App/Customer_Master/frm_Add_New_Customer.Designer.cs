@@ -264,6 +264,7 @@ namespace Shree_Mobile_Shopee_App
             this.btn_Save.TabIndex = 11;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // tb_Total_Bill
             // 
@@ -300,6 +301,7 @@ namespace Shree_Mobile_Shopee_App
             this.dgv_List_Of_Perchase_Mobile.Name = "dgv_List_Of_Perchase_Mobile";
             this.dgv_List_Of_Perchase_Mobile.Size = new System.Drawing.Size(955, 172);
             this.dgv_List_Of_Perchase_Mobile.TabIndex = 11;
+            this.dgv_List_Of_Perchase_Mobile.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_List_Of_Perchase_Mobile_CellContentClick);
             // 
             // Sr_No
             // 

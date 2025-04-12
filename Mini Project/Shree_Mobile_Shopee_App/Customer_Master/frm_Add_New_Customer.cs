@@ -199,6 +199,58 @@ namespace Shree_Mobile_Shopee_App
             PCnt++;
         }
 
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            Con_Start();
+
+            if (tb_Customer_ID.Text != "" && tb_Customer_Name.Text != "" && dtp_Bill_Date.Text != "" && tb_Mobile_No.Text != "" && tb_Total_Bill.Text != "")
+            {
+                SqlCommand Cmd = new SqlCommand();
+                Cmd.Connection = Con;
+                Cmd.CommandText = "Insert Into Customer_Details Values (@CId, @CName, @BDate, @MNo, @TBill)";
+
+                Cmd.Parameters.Add("CId", SqlDbType.Int).Value = tb_Customer_ID.Text;
+                Cmd.Parameters.Add("CName", SqlDbType.NVarChar).Value = tb_Customer_Name.Text;
+                Cmd.Parameters.Add("BDate", SqlDbType.Date).Value = dtp_Bill_Date.Text;
+                Cmd.Parameters.Add("MNo", SqlDbType.Decimal).Value = tb_Mobile_No.Text;
+                Cmd.Parameters.Add("TBill", SqlDbType.Money).Value = tb_Total_Bill.Text;
+
+                Cmd.ExecuteNonQuery();
+
+                for (int i = 0; i < dgv_List_Of_Perchase_Mobile.Rows.Count; i++)
+                {
+                    SqlCommand Cmd1 = new SqlCommand();
+                    Cmd1.Connection = Con;
+                    Cmd1.CommandText = "Insert Into Customer_Product Values (@C_Id,@srno, @BName, @MName, @Price, @Quantity, @Total)";
+
+                    Cmd1.Parameters.Add("C_Id", SqlDbType.Int).Value = tb_Customer_ID.Text;
+                    Cmd1.Parameters.Add("srno", SqlDbType.Int).Value = dgv_List_Of_Perchase_Mobile.Rows[i].Cells[0].Value;
+                    Cmd1.Parameters.Add("BName", SqlDbType.NVarChar).Value = dgv_List_Of_Perchase_Mobile.Rows[i].Cells[1].Value;
+                    Cmd1.Parameters.Add("MName", SqlDbType.NVarChar).Value = dgv_List_Of_Perchase_Mobile.Rows[i].Cells[2].Value;
+                    Cmd1.Parameters.Add("Price", SqlDbType.Money).Value = dgv_List_Of_Perchase_Mobile.Rows[i].Cells[3].Value;
+                    Cmd1.Parameters.Add("Quantity", SqlDbType.Int).Value = dgv_List_Of_Perchase_Mobile.Rows[i].Cells[4].Value;
+                    Cmd1.Parameters.Add("Total", SqlDbType.Money).Value = dgv_List_Of_Perchase_Mobile.Rows[i].Cells[5].Value;
+
+                    Cmd1.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Saved Succesfully", "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Clear_Controls();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Incomplet Data", "Error", MessageBoxButtons.OK);
+                Clear_Controls();
+
+            }
+
+
+            Con_Stop();
+        }
+
         private void btn_Log_Out_Click(object sender, EventArgs e)
         {
             DialogResult Res = MessageBox.Show("You Want To LogOut??", "LOGGING OUT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -216,6 +268,11 @@ namespace Shree_Mobile_Shopee_App
             frm_Customer_Menu obj = new frm_Customer_Menu();
             obj.Show();
             this.Hide();
+        }
+
+        private void dgv_List_Of_Perchase_Mobile_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
